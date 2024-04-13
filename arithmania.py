@@ -29,7 +29,7 @@ def copy_file(input_file, output_file):
         print("An error occurred:", str(e))
 
 # Provide the paths of the input and output files
-input_file_path = "/content/test1.txt"
+input_file_path = "test1.txt"
 output_file_path = "output.txt"
 
 # Call the function to copy the contents
@@ -126,7 +126,7 @@ def makeKey():
 
 
  # Provide the paths of the input and output files
-input_file_path = "/content/output.txt"
+input_file_path = "output.txt"
 output_file_path = "encrypted_output.txt"
 
 # Call the function to encrypt the contents of the input file
@@ -190,8 +190,8 @@ def hide_encrypted_data_in_image(image_path, encrypted_binary_file_path, output_
     cv2.imwrite(output_image_path, image)
 
 # Example usage
-image_path = '/content/test_image.png'  # Path to your PNG image file
-encrypted_binary_file_path = '/content/encrypted_output.txt'  # Path to your encrypted binary data file
+image_path = 'test_image.png'  # Path to your PNG image file
+encrypted_binary_file_path = 'encrypted_output.txt'  # Path to your encrypted binary data file
 output_image_path = 'output_image_with_hidden_encrypted_data.png'  # Path for the output image with hidden encrypted data
 
 # Hide encrypted data in the image
@@ -241,7 +241,7 @@ def extract_hidden_data_from_image(image_path, output_file_path):
 
 # Example usage
 image_path = 'output_image_with_hidden_encrypted_data.png'  # Path to the image with hidden data
-output_file_path = '/content/extracted_encrypted_data.txt'  # Path for the output file to save the extracted data
+output_file_path = 'extracted_encrypted_data.txt'  # Path for the output file to save the extracted data
 
 # Extract hidden data from the image
 extract_hidden_data_from_image(image_path, output_file_path)
@@ -306,7 +306,7 @@ def convert_binary_text_to_text(binary_text_file_path, output_text_file_path):
         output_text_file.write(text_data)
 
 # Provide the paths of the binary text input file and output text file
-binary_text_file_path = "/content/decrypted_output.txt"
+binary_text_file_path = "decrypted_output.txt"
 output_text_file_path = "output_text_file.txt"
 
 # Call the function to convert binary text data to text
